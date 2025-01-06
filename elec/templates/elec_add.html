@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic add</title>
+</head>
+<body>
+    <h1>{% if elec %}Edit{% else %}Add{% endif %} Electronic</h1>
+    <form method="post">
+    {% csrf_token %}
+    <label for="name">Name:</label>
+    <input type="text" name="name" value="{{ elec.name|default:'' }}"><br>
+    <label for="price">Price:</label>
+    <input type="text" name="price" value="{{ elec.price|default:'' }}"><br>
+    <label for="quants">Quantity:</label>
+    <input type="text" name="quants" value="{{ elec.quants|default:'' }}"><br>
+    <button type="submit">Save</button>
+    </form>
+    <a href="{% url 'elec:elec_home' %}">Back to List</a>
+</body>
+</html>

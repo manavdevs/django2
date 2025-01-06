@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clothes add</title>
+</head>
+<body>
+    <h1>{% if clothes %}Edit{% else %}Add{% endif %} Clothes</h1>
+    <form method="post">
+    {% csrf_token %}
+    <label for="name">Name:</label>
+    <input type="text" name="name" value="{{ clothes.name|default:'' }}"><br>
+    <label for="price">Price:</label>
+    <input type="text" name="price" value="{{ clothes.price|default:'' }}"><br>
+    <label for="quants">Quantity:</label>
+    <input type="text" name="quants" value="{{ clothes.quants|default:'' }}"><br>
+    <button type="submit">Save</button>
+    </form>
+    <a href="{% url 'clothes:clothes_home' %}">Back to List</a>
+</body>
+</html>
