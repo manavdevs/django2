@@ -1,6 +1,10 @@
 <h1>Steps to run the project</h1><br>
 <h1>Step 1</h1>Create an empty folder<br>
-<h1>Step 2</h1><p>Clone this repository in cmd using git clone https://github.com/manavdevs/dajngo2.git</p> <br>
+<h1>Step 2</h1><p>Clone this repository in cmd using<br>
+<div>
+  <button onclick="navigator.clipboard.writeText('git clone https://github.com/manavdevs/dajngo2.git')">Clone</button>
+  <pre><code>git clone https://github.com/manavdevs/dajngo2.git</code></pre>
+</div><br>
 <h1>Step 3</h1>Create a database to store values <br>
 <img src="https://github.com/user-attachments/assets/e511c01d-1baf-43e4-ac86-1bb76fcae130"></img>
 <br>
@@ -10,12 +14,17 @@
 <h1>Step 5</h1>Change Directory to your project file `cd ecommerce`<br>
 <img src="https://github.com/user-attachments/assets/0f5911ed-40d0-4a07-a774-57f6bbcd8405"></img><br>
 <h1>Step 5</h1>make all the migrations using the below commands <br>
-`py manage.py makemigrations`<br>
-`py manage.py migrate` <br>
+<div>
+  <button onclick="navigator.clipboard.writeText(```'py manage.py makemigrations
+                                                 py manage.py migrate'```)">Migrate</button>
+  <pre><code>py manage.py makemigrations</code></pre><pre><code>py manage.py migrate</code></pre>
+</div><br>
 <h1>Step 6</h1>Your schemas(tables) are created <br>
 <img src="https://github.com/user-attachments/assets/a17c7061-1d4a-4a78-b855-3cc69c53a35d"></img>
 <br>
-<h1>Step 7</h1>Run the project using `python manage.py runserver`<br>
+<h1>Step 7</h1>Run the project using
+<button onclick="navigator.clipboard.writeText('python manage.py runserver')">Run Project</button>
+  <pre><code>python manage.py runserver</code></pre><br>
 <h1>Output Screens</h1>
 <h4>Screen 1 Main Page</h4>
 <img src="https://github.com/user-attachments/assets/541388c4-e61f-4eda-b584-e4d4c66b2fdd"></img>
